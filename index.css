@@ -1,0 +1,41 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  overflow-x: hidden;
+  background-color: #efedd6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 400px;
+  background-color: rgb(49, 123, 201);
+  border-radius: 10px;
+  height: 200px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.move {
+  transition: transform 0.5s ease;
+  transform: translateX(0) !important;
+}
+
+.container:nth-child(odd) {
+  transform: translateX(-200vw);
+}
+
+.container:nth-child(even) {
+  transform: translateX(200vw);
+}
